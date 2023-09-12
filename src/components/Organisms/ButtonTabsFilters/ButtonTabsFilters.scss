@@ -1,0 +1,35 @@
+.ButtonTabsFilters {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  .tab {
+    border-radius: 100px;
+    background: $white-button-tab;
+    color: $grey-title;
+    text-align: right;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    border: none;
+    box-shadow: none;
+    .number {
+      font-weight: 400;
+      margin-left: 3px;
+    }
+    &:hover {
+      background: $white-button-tab;
+      color: $grey-title !important;
+    }
+    &-active {
+      background-color: $blue-button-tab;
+      color: $white;
+      &:hover {
+        background-color: $blue-button-tab;
+        color: $white !important;
+      }
+    }
+  }
+}

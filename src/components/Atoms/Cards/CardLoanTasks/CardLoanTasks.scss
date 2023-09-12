@@ -1,0 +1,254 @@
+.CardLoanTasks {
+  width: 396px;
+  height: 184px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #6e7889;
+  background: #fafcfc;
+  padding: 12px 19px;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__top {
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      .flex-end {
+        display: flex;
+        justify-content: flex-end;
+        gap: 4px;
+        align-items: center;
+        .svg-grid {
+          height: 12px;
+          width: 12px;
+          fill: none;
+        }
+        .quick-task {
+          path {
+            stroke: #6e7889;
+            &:first-child {
+              fill: #6e7889;
+            }
+          }
+        }
+        .major-task {
+          path {
+            stroke: #6e7889;
+            fill: #6e7889;
+          }
+        }
+      }
+    }
+    .h4 {
+      margin-bottom: 6px;
+    }
+    .text {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .body-card--green {
+      margin-left: 5px;
+      background-color: #c5f0c8;
+      color: #466849;
+      padding: 0 5px;
+      font-weight: 700;
+      border-radius: 2px;
+    }
+  }
+  &__bottom {
+    .body-small-up {
+      color: #587e5b;
+      margin-bottom: 8px;
+    }
+    .flex-betwen {
+      display: flex;
+      justify-content: space-between;
+      .body-card {
+        color: #587e5b;
+      }
+      .button-card,
+      .button-link {
+        width: 49%;
+      }
+      .button-link {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        font-weight: 400;
+        color: $black !important;
+        &:hover {
+          color: $black !important;
+        }
+      }
+    }
+  }
+  &-approved {
+    border-color: #6eac72;
+    .state {
+      border-radius: 76px;
+      background: #c5f0c8;
+      padding: 4px 8px 4px 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .check {
+        margin-right: 2px;
+      }
+      .body-small {
+        color: #355137;
+      }
+    }
+    .h4 {
+      color: #466849;
+    }
+    .flex-end {
+      .svg-grid {
+        path {
+          stroke: #6eac72;
+          &:first-child {
+            fill: #6eac72;
+          }
+        }
+      }
+      .major-task {
+        path {
+          stroke: #6eac72;
+          fill: #6eac72;
+        }
+      }
+      .body-small {
+        color: #6eac72;
+      }
+    }
+  }
+  &-inReview {
+    border-color: #ac78b3;
+    background: #fdfcff;
+    .button {
+      width: 100%;
+      border-color: #ac78b3;
+      color: #693b6f;
+      margin-top: 8px;
+      &:hover,
+      &:active,
+      &:focus {
+        color: #693b6f !important;
+        border-color: #ac78b3 !important;
+      }
+    }
+    .body-card--green {
+      background-color: #e3ddf0;
+    }
+    .body-small {
+      color: #8a5791;
+    }
+    .CardLoanTasks__top__head .flex-end .major-task path {
+      stroke: #ac78b3;
+      fill: #ac78b3;
+    }
+    .state {
+      border-radius: 76px;
+      background: #e3ddf0;
+      padding: 4px 8px 4px 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      .body-small {
+        color: #48244d;
+      }
+    }
+    .body-card {
+      color: #48244d;
+    }
+  }
+  &-incomplete {
+    border-color: #929fb0;
+    .body-card-text-2 {
+      color: #48244d;
+    }
+    .ProgressCard {
+      margin-top: 0px;
+    }
+    .state {
+      border-radius: 76px;
+      background: #404859;
+      padding: 4px 8px 4px 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      .body-small {
+        color: #f9fafb;
+      }
+    }
+  }
+  &-error {
+    border-color: #c94f4a;
+    .body-card-text-2 {
+      color: #48244d;
+    }
+    .ProgressCard {
+      .progress {
+        background-color: #6eac72;
+        .bar-amount {
+          background-color: #c94f4a;
+        }
+      }
+    }
+    .ProgressCard {
+      margin-top: 0px;
+    }
+    .state {
+      border-radius: 76px;
+      background: #ffd4cf;
+      padding: 4px 8px 4px 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      .body-small {
+        color: #712220;
+      }
+    }
+    .h4,
+    .body-card {
+      color: #712220;
+      &-text-2 {
+        color: #ac3e3a;
+      }
+    }
+    .button-card {
+      border-color: #c94f4a;
+    }
+    .flex-betwen {
+      .button,
+      .button-link {
+        color: #712220 !important;
+      }
+    }
+    .flex-end {
+      .svg-grid {
+        path {
+          stroke: #c94f4a;
+          &:first-child {
+            fill: #c94f4a;
+          }
+        }
+      }
+      .major-task {
+        path {
+          stroke: #c94f4a;
+          fill: #c94f4a;
+        }
+      }
+      .body-small {
+        color: #c94f4a;
+      }
+    }
+  }
+}

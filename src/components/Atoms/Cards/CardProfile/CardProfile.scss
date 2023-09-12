@@ -1,0 +1,66 @@
+.CardProfile {
+  width: 256px;
+  height: 85px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #f9fafb;
+  position: relative;
+  .link {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    padding-top: 0;
+    .avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 100%;
+      margin-top: -5px;
+      margin-bottom: 4px;
+    }
+    .link {
+      color: #5e8eb7;
+      text-align: right;
+      font-family: Inter;
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-decoration-line: underline;
+    }
+    .text {
+      color: $grey-text-op;
+      text-align: center;
+      font-family: Inter;
+      font-style: normal;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+      &-bold {
+        color: $black-text;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+      &-small {
+        text-transform: none;
+        text-decoration: none;
+        color: $grey-title;
+        margin-bottom: 0px;
+      }
+    }
+    &--bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}

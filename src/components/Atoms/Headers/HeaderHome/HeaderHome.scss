@@ -1,0 +1,22 @@
+.HeaderHome {
+  height: 56px;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #dfe4eb;
+  .box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    .logo {
+      height: 32px;
+    }
+    .logo-c {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}

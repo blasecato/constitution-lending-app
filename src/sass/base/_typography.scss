@@ -1,0 +1,104 @@
+.h1 {
+  color: $grey-title;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.h2 {
+  color: $black-text;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  &-w8 {
+    font-weight: 800;
+  }
+}
+.h3 {
+}
+.h4 {
+  color: $black-text;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: capitalize;
+  &-w4 {
+    font-weight: 400;
+  }
+  &-w5 {
+    font-weight: 500;
+  }
+}
+.body-regular {
+  color: $grey-title;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  &-bold {
+    font-weight: 600;
+  }
+  &-w5 {
+    font-weight: 500;
+  }
+}
+
+.placeholder {
+  color: $grey-placeholder;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.button-txt-big {
+  color: $white-button-txt;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+.body-small {
+  color: $grey-title;
+  font-family: Inter;
+  font-size: 10px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  &-w4 {
+    font-weight: 400;
+  }
+  &-w6 {
+    font-weight: 600;
+  }
+  &-up {
+    text-transform: uppercase;
+  }
+}
+.body-card {
+  color: $grey-title;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  &-bold-line {
+    font-weight: 700;
+    text-decoration-line: underline;
+  }
+  &-w6 {
+    font-weight: 600;
+  }
+  &-w5 {
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,219 @@
+.Progress {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  .tab {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .bar-status {
+      width: 100%;
+      width: calc(100% + 20px);
+      height: 6px;
+      border-radius: 16px;
+      margin-top: 6px;
+      background-color: $white-button-tab;
+    }
+    &-complete {
+      .body-small {
+        color: $green-tab-active-text;
+      }
+      .bar-status {
+        background-color: $green-tab-active;
+      }
+    }
+    &-started {
+      &:hover {
+        .bar-status {
+          background-color: $grey-title;
+        }
+      }
+    }
+  }
+}
+.ant-popover {
+  &-content {
+    .ant-popover-inner {
+      padding: 0;
+    }
+    .popover-content {
+      padding: 10px 8px;
+      border-radius: 5px;
+      width: 200px;
+      position: relative;
+      .body-small {
+        color: #fafcfa;
+        &-w6 {
+          margin-bottom: 6px;
+        }
+      }
+      .divider {
+        height: 1px;
+        width: 100%;
+        margin: 8px 0;
+      }
+      .button {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+      }
+      .flecha-darck,
+      .flecha {
+        display: none;
+        width: 16px;
+        height: 8px;
+      }
+      .felx-between {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+
+        .flex {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            margin-right: 5px;
+          }
+        }
+        .button {
+          background-color: transparent;
+          border: none;
+          padding: 0;
+          height: 20px;
+          box-shadow: none;
+          .flecha {
+            margin-left: 5px;
+            width: 12px;
+          }
+        }
+      }
+      .warning {
+        display: none;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+        svg {
+          width: 10px;
+          height: 11px;
+          fill: none;
+        }
+        .body-small {
+          margin-bottom: 0;
+          color: $red-warning;
+          text-decoration-line: underline;
+        }
+      }
+      &-complete,
+      &-started {
+        background-color: #587e5b;
+        .divider {
+          background-color: #fafcfa;
+        }
+        .flecha {
+          display: block;
+        }
+        .button {
+          &:hover,
+          &:active,
+          &:focus {
+            color: #fafcfa;
+          }
+        }
+        &::after {
+          content: "*";
+          font-size: 0;
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 11px solid #587e5b;
+          position: absolute;
+          left: 46%;
+          top: -10px;
+          z-index: 3;
+        }
+      }
+      &-started {
+        background-color: $grey-title;
+        width: 270px;
+        .warning {
+          display: flex;
+          .body-small {
+            color: #ffd4cf;
+          }
+          svg {
+            path {
+              stroke: #ffd4cf;
+            }
+          }
+        }
+        &::after {
+          content: "*";
+          font-size: 0;
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 11px solid $grey-title;
+          position: absolute;
+          left: 46%;
+          top: -10px;
+          z-index: 3;
+        }
+      }
+      &-not-started {
+        background-color: #ccd3db;
+        width: 270px;
+        .body-small {
+          color: $black;
+        }
+        .warning {
+          display: flex;
+        }
+        svg {
+          path {
+            stroke: $red-warning;
+          }
+        }
+        .button {
+          &:hover,
+          &:active,
+          &:focus {
+            color: $black;
+          }
+        }
+        .divider {
+          background-color: #404859;
+        }
+        .flecha-darck {
+          display: block;
+        }
+        &::after {
+          content: "*";
+          font-size: 0;
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 11px solid #ccd3db;
+          position: absolute;
+          left: 46%;
+          top: -10px;
+          z-index: 3;
+        }
+      }
+      .green-all {
+        .body-small {
+          color: #c5f0c8;
+        }
+      }
+    }
+  }
+}
