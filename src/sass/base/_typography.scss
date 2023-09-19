@@ -18,6 +18,12 @@
   }
 }
 .h3 {
+  color: #2a2f3c;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
 }
 .h4 {
   color: $black-text;
@@ -41,7 +47,14 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  &-bold {
+  &-italic {
+    font-style: italic;
+  }
+  &-up {
+    text-transform: uppercase;
+  }
+  &-bold,
+  &-w6 {
     font-weight: 600;
   }
   &-w5 {
@@ -56,6 +69,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  &-w6 {
+    font-weight: 600;
+  }
 }
 .button-txt-big {
   color: $white-button-txt;

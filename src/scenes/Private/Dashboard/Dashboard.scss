@@ -45,6 +45,21 @@
       height: auto;
     }
   }
+  .content-link {
+    padding: 0 32px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .link {
+      text-decoration: none;
+      color: #5e8eb7;
+      display: flex;
+      align-items: center;
+      .plus {
+        margin-right: 8px;
+      }
+    }
+  }
   .content-flex-wrap {
     display: flex;
     align-items: center;

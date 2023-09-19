@@ -1,5 +1,5 @@
 import React from "react";
-import logoPng from "../../../../assets/images/Const Lending.png";
+import logoPng from "assets/images/Const Lending.png";
 
 const BarLogin = () => {
   return (

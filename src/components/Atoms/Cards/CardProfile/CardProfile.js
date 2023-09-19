@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import avatarSvg from "../../../../assets/images/avatar.png";
+import avatarSvg from "assets/images/avatar.png";
 
 const CardProfile = () => {
   return (

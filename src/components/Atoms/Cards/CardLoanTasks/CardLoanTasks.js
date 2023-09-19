@@ -1,11 +1,11 @@
 import React from "react";
-import checkSvg from "../../../../assets/images/check-circle.svg";
-import homeGreyEmptySvg from "../../../../assets/images/home-grey-empty.svg";
-import alertSvg from "../../../../assets/images/alert-circle.svg";
-import clockSvg from "../../../../assets/images/clock.svg";
-import ProgressCard from "../../ProgressCard/ProgressCard";
 import { Button } from "antd";
-import ModalReView from "../../../Organisms/Modals/ModalReView/ModalReView";
+import checkSvg from "assets/images/check-circle.svg";
+import homeGreyEmptySvg from "assets/images/home-grey-empty.svg";
+import alertSvg from "assets/images/alert-circle.svg";
+import clockSvg from "assets/images/clock.svg";
+import ProgressCard from "../../ProgressCard/ProgressCard";
+import ModalCardState from "../../../Organisms/Modals/ModalCardState/ModalCardState";
 
 const CardLoanTasks = ({ task }) => {
   return (
@@ -59,7 +59,11 @@ const CardLoanTasks = ({ task }) => {
       </div>
       <div className="CardLoanTasks__bottom">
         {task.state === "beginTask" && (
-          <Button className="button button-card">Begin task</Button>
+          <ModalCardState
+            title="APPROVAL | MORTGAGE PAYMENTS"
+            titleButton="Begin task"
+            state="beginTask"
+          />
         )}
         {task.state === "approved" && (
           <div>
@@ -74,7 +78,11 @@ const CardLoanTasks = ({ task }) => {
         {task.state === "addDocs" && (
           <div>
             <div className="flex-betwen">
-              <Button className="button button-card">Add docs</Button>
+              <ModalCardState
+                title="ADD ADDITIONAL DOCUMENT"
+                titleButton="Add docs"
+                state="addDocs"
+              />
               <Button className="button button-link">View doc list</Button>
             </div>
           </div>
@@ -82,7 +90,11 @@ const CardLoanTasks = ({ task }) => {
         {task.state === "incomplete" && (
           <div>
             <div className="flex-betwen">
-              <Button className="button button-card">Add docs</Button>
+              <ModalCardState
+                title="ADD ADDITIONAL DOCUMENT"
+                titleButton="Add docs"
+                state="addDocs"
+              />
               <Button className="button button-link">View doc list</Button>
             </div>
           </div>
@@ -98,7 +110,11 @@ const CardLoanTasks = ({ task }) => {
         {task.state === "upload" && (
           <div>
             <div className="flex-betwen">
-              <Button className="button button-card">Upload</Button>
+              <ModalCardState
+                title="UNDERWRITING | ACH PAYMENT FORM"
+                titleButton="Upload"
+                state="upload"
+              />
               <Button className="button button-link">See sample</Button>
             </div>
           </div>
@@ -109,7 +125,11 @@ const CardLoanTasks = ({ task }) => {
             <p className="body-card body-card-w5">
               Ricardo Sims, Mervet Taha, Edgar Allen Poe
             </p>
-            <ModalReView />
+            <ModalCardState
+              title="APPROVAL | ENTITY AND GUARANTOR CREATION"
+              titleButton="View task"
+              state="inReview"
+            />
           </div>
         )}
       </div>

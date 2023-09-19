@@ -1,0 +1,49 @@
+.UploadDocs {
+  .button-upload {
+    height: 78px;
+    width: 100%;
+    border: 1px dashed #6e7889;
+    span {
+      color: #6e7889;
+      font-family: Inter;
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    p {
+      color: #2a2f3c;
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      span {
+        font-size: 10px;
+        color: #4e8aff;
+      }
+    }
+  }
+  .ant-upload {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .button {
+    border-radius: 2px;
+    border: #122536;
+    background: #122536;
+    width: 100%;
+    height: 32px;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    &:hover {
+      color: #fff !important;
+    }
+  }
+}

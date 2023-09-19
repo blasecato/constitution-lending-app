@@ -1,3 +1,7 @@
+.BarDashboard-space {
+  width: 64px;
+  height: calc(100vh - 56px);
+}
 .BarDashboard {
   padding: 20px 12px;
   background-color: #eff3f5;
@@ -7,6 +11,9 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  position: fixed;
+  top: 56px;
+  left: 0;
   .box {
     display: flex;
     flex-direction: column;

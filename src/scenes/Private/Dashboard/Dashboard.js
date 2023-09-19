@@ -1,14 +1,16 @@
 import React from "react";
-import HeaderHome from "../../../components/Atoms/Headers/HeaderHome/HeaderHome";
-import BarDashboard from "../../../components/Atoms/Headers/BarDashboard/BarDashboard";
-import CardProfile from "../../../components/Atoms/Cards/CardProfile/CardProfile";
-import Progress from "../../../components/Atoms/Progress/Progress";
-import ButtonTabsFilters from "../../../components/Organisms/ButtonTabsFilters/ButtonTabsFilters";
-import CardLoanTasks from "../../../components/Atoms/Cards/CardLoanTasks/CardLoanTasks";
-import homeWhiteSvg from "../../../assets/images/home-white.svg";
-import homeWhiteEmptySvg from "../../../assets/images/home-white-empty.svg";
-import homeBlackSvg from "../../../assets/images/home-black-empty.svg";
-import homeGreenSvg from "../../../assets/images/home-green-all.svg";
+import HeaderHome from "components/Atoms/Headers/HeaderHome/HeaderHome";
+import BarDashboard from "components/Atoms/Headers/BarDashboard/BarDashboard";
+import CardProfile from "components/Atoms/Cards/CardProfile/CardProfile";
+import Progress from "components/Atoms/Progress/Progress";
+import ButtonTabsFilters from "components/Atoms/ButtonTabsFilters/ButtonTabsFilters";
+import CardLoanTasks from "components/Atoms/Cards/CardLoanTasks/CardLoanTasks";
+import homeWhiteSvg from "assets/images/home-white.svg";
+import homeWhiteEmptySvg from "assets/images/home-white-empty.svg";
+import homeBlackSvg from "assets/images/home-black-empty.svg";
+import homeGreenSvg from "assets/images/home-green-all.svg";
+import plusSvg from "assets/images/plus.svg";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const dummyTasksCards = [
@@ -230,6 +232,12 @@ const Dashboard = () => {
               <h1 className="h2">Approval Tasks</h1>
             </div>
             <ButtonTabsFilters />
+          </div>
+          <div className="content-link">
+            <Link to="./" className="link body-card body-card-w5">
+              <img src={plusSvg} className="plus" alt="plus" />
+              Add additional document
+            </Link>
           </div>
           <div className="content-flex-wrap">
             {dummyTasksCards?.map((task) => (

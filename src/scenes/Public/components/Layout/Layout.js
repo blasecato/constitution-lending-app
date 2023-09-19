@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../Atoms/Headers/Header/Header";
-import BarLogin from "../../Atoms/Headers/BarLogin/BarLogin";
+import Header from "components/Atoms/Headers/Header/Header";
+import BarLogin from "components/Atoms/Headers/BarLogin/BarLogin";
 
 const Layout = ({ children }) => {
   return (

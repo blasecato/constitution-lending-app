@@ -1,13 +1,18 @@
-@import "../../components/Organisms/Layout/Layout.scss";
+@import "../../scenes/Public/components/Layout/Layout.scss";
 @import "../../components/Atoms/Headers/BarLogin/BarLogin.scss";
 @import "../../components/Atoms/Headers/BarDashboard/BarDashboard.scss";
 @import "../../components/Atoms/Headers/Header/Header.scss";
 @import "../../components/Atoms/Headers/HeaderHome/HeaderHome.scss";
 @import "../../components/Atoms/Cards/CardProfile/CardProfile.scss";
 @import "../../components/Atoms/Progress/Progress.scss";
-@import "../../components/Organisms/ButtonTabsFilters/ButtonTabsFilters.scss";
+@import "../../components/Atoms/ButtonTabsFilters/ButtonTabsFilters.scss";
 @import "../../components/Atoms/Cards/CardLoanTasks/CardLoanTasks.scss";
+@import "../../components/Atoms/Cards/CardInsuranceCompanyName/CardInsuranceCompanyName.scss";
+@import "../../components/Atoms/UploadDocs/UploadDocs.scss";
 @import "../../components/Atoms/ProgressCard/ProgressCard.scss";
 
 // ------------------------------ Modals --------------------------------------- //
-@import "../../components/Organisms/Modals/ModalReView/ModalReView.scss";
+@import "../../components/Organisms/Modals/ModalCardState/ModalCardState.scss";
+@import "../../components/Organisms/Modals/ModalCardState/components/InReview/CardReview.scss";
+@import "../../components/Organisms/Modals/ModalCardState/components/AddDocs/CardEnterDoc.scss";
+@import "../../components/Organisms/Modals/ModalEndSubmit/ModalEndSubmit.scss";

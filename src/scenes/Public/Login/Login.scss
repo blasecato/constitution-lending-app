@@ -29,11 +29,18 @@
       &:hover {
         color: #404859;
       }
+      .body-regular-bold {
+        text-decoration: underline;
+      }
     }
     .link-absolute {
       position: absolute;
       bottom: 30px;
       left: 32px;
+      text-decoration: none;
+      .body-regular-bold {
+        text-decoration: underline;
+      }
     }
   }
   .rigth {

@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Popover } from "antd";
-import flechaWhiteSvg from "../../../assets/images/flecha-white.png";
-import flechadarckSvg from "../../../assets/images/flecha-darck.png";
-import flechaGreenSvg from "../../../assets/images/arrow-green.png";
+import flechaWhiteSvg from "assets/images/flecha-white.png";
+import flechadarckSvg from "assets/images/flecha-darck.png";
+import flechaGreenSvg from "assets/images/arrow-green.png";
 
 const TabBarProgress = ({ tab }) => {
   return (

@@ -85,6 +85,14 @@
         }
       }
     }
+    .ModalCardState {
+      width: 50% !important;
+      .button-link {
+        background-color: #fff !important;
+        width: 100% !important;
+        border: 1px solid #ccd3db !important;
+      }
+    }
   }
   &-approved {
     border-color: #6eac72;
@@ -128,16 +136,20 @@
   &-inReview {
     border-color: #ac78b3;
     background: #fdfcff;
-    .button {
-      width: 100%;
-      border-color: #ac78b3;
-      color: #693b6f;
-      margin-top: 8px;
-      &:hover,
-      &:active,
-      &:focus {
-        color: #693b6f !important;
-        border-color: #ac78b3 !important;
+    .CardLoanTasks__bottom {
+      .ModalCardState {
+        width: 100% !important;
+        .button {
+          border-color: #ac78b3 !important;
+          color: #693b6f;
+          margin-top: 8px;
+          &:hover,
+          &:active,
+          &:focus {
+            color: #693b6f !important;
+            border-color: #ac78b3 !important;
+          }
+        }
       }
     }
     .body-card--green {
@@ -249,6 +261,11 @@
       .body-small {
         color: #c94f4a;
       }
+    }
+  }
+  &-beginTask {
+    .ModalCardState {
+      width: 100% !important;
     }
   }
 }

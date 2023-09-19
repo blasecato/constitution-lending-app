@@ -1,0 +1,27 @@
+.CardInsuranceCompanyName {
+  border-radius: 4px;
+  border: 1px solid #929fb0;
+  min-height: 195px;
+  width: 100%;
+  padding: 16px;
+  .h4 {
+    color: #929fb0;
+    font-style: italic;
+    margin-bottom: 16px;
+  }
+  .body-card {
+    color: #6e7889;
+  }
+  .body-regular {
+    color: #2a2f3c;
+    margin-bottom: 12px;
+  }
+  .flex-btw {
+    .column {
+      width: 50%;
+      .body-regular {
+        color: #929fb0;
+      }
+    }
+  }
+}

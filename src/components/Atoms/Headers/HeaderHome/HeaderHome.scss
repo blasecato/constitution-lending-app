@@ -1,11 +1,16 @@
 .HeaderHome {
   height: 56px;
   padding: 0 32px;
+  left: 0;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f9fafb;
   border-bottom: 1px solid #dfe4eb;
+  position: fixed;
+  z-index: 200;
+  width: 100%;
   .box {
     display: flex;
     justify-content: flex-start;
@@ -19,4 +24,8 @@
       width: 32px;
     }
   }
+}
+.HeaderHome-space {
+  height: 56px;
+  width: 100%;
 }
