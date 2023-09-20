@@ -1,9 +1,8 @@
 @import "../../scenes/Public/components/Layout/Layout.scss";
-@import "../../components/Atoms/Headers/BarLogin/BarLogin.scss";
-@import "../../components/Atoms/Headers/BarDashboard/BarDashboard.scss";
-@import "../../components/Atoms/Headers/Header/Header.scss";
-@import "../../components/Atoms/Headers/HeaderHome/HeaderHome.scss";
-@import "../../components/Atoms/Cards/CardProfile/CardProfile.scss";
+@import "../../scenes/Private/components/Menu/BarDashboard/BarDashboard.scss";
+@import "../../scenes/Public/components/Header/Header.scss";
+@import "../../scenes/Private/components/Menu/HeaderDashboard/HeaderDashboard.scss";
+@import "../../scenes/Private/components/CardProfile/CardProfile.scss";
 @import "../../components/Atoms/Progress/Progress.scss";
 @import "../../components/Atoms/ButtonTabsFilters/ButtonTabsFilters.scss";
 @import "../../components/Atoms/Cards/CardLoanTasks/CardLoanTasks.scss";

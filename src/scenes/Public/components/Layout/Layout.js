@@ -1,11 +1,13 @@
 import React from "react";
-import Header from "components/Atoms/Headers/Header/Header";
-import BarLogin from "components/Atoms/Headers/BarLogin/BarLogin";
+import Header from "scenes/Public/components/Header/Header";
+import logoPng from "assets/images/Const Lending.png";
 
 const Layout = ({ children }) => {
   return (
     <section className="Layout">
-      <BarLogin />
+      <div className="BarLogin">
+        <img src={logoPng} alt="logo" className="logo" />
+      </div>
       <div className="content">
         <Header />
         {children}

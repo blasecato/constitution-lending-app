@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Login from "./Login/login";
+import Login from "./Login/Login";
 import ResetPassword from "./ResetPassword/ResetPassword";
 
 const Public = () => {
