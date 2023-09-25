@@ -59,6 +59,20 @@
       border: 1px solid $blue-button-tab !important;
     }
   }
+  &-grey {
+    color: #6e7889 !important;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    border-radius: 2px;
+    border: 1px solid #eff3f5 !important;
+    background: #eff3f5;
+    width: 100%;
+  }
   &-transparent {
     padding: 0;
     background-color: transparent;

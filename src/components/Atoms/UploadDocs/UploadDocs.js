@@ -1,22 +1,75 @@
-import React from "react";
-import { Button, Upload } from "antd";
+import React, { useState } from "react";
 import uploadSvg from "assets/images/upload.svg";
+import deleteSvg from "assets/images/delete.svg";
+import fileSvg from "assets/images/file.svg";
 import ModalEndSubmit from "components/Organisms/Modals/ModalEndSubmit/ModalEndSubmit";
+import { EyeOutlined } from "@ant-design/icons";
 
-const UploadDocs = ({ titleButton, handleOk }) => {
+const getBase64 = (img, callback) => {
+  const reader = new FileReader();
+  reader.addEventListener("load", () => callback(reader.result));
+  reader.readAsDataURL(img);
+};
+
+const UploadDocs = ({ titleButton, handleOk, fileOk }) => {
+  const [imageUrl, setImageUrl] = useState(undefined);
+  const [file, setFile] = useState();
+
+  function handleChangeFile(event) {
+    setFile(event.target.files[0]);
+    getBase64(event.target.files[0], (url) => {
+      setImageUrl(url);
+    });
+  }
   return (
     <div className="UploadDocs">
-      <Upload
-        action="https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188"
-        directory>
-        <Button className="button-upload">
-          <img src={uploadSvg} alt="upload" className="upload" />
-          <p>
-            Drag and drop files, or <span>Browse</span>
-          </p>
-          <span>Supports png or jpeg files</span>
-        </Button>
-      </Upload>
+      <div
+        className={`felx-btw UploadDocs--container ${
+          fileOk && "content-flex"
+        }`}>
+        <div className="input-content">
+          <div className="white" />
+          <input
+            type="file"
+            onChange={handleChangeFile}
+            accept="image/png,image/jpg,image/jpeg"
+          />
+          {imageUrl ? (
+            <div className="cont-img">
+              <img src={imageUrl} alt="avatar" className="avatar-pre" />
+            </div>
+          ) : (
+            <div className="empty-input">
+              <img src={uploadSvg} alt="upload" className="upload" />
+              <p className="body-small body-small-w6">
+                Drag and drop files, or <span className="blue">Browse</span>
+              </p>
+              <p className="small-detail">Supports png or jpeg files</p>
+            </div>
+          )}
+        </div>
+        {fileOk && (
+          <div className="file-ok">
+            <div className="file">
+              <div className="circle">
+                <img src={uploadSvg} alt="upload" className="upload" />
+              </div>
+              <div className="file-content">
+                <div className="flex-btw">
+                  <div className="flex">
+                    <img className="fileIcon" alt="fileIcon" src={fileSvg} />
+                    <span>id1.jpg</span>
+                  </div>
+                  <div className="flex">
+                    <EyeOutlined />
+                    <img src={deleteSvg} alt="delete" className="delete" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
       <ModalEndSubmit
         titleButton={titleButton}
         handleOk={handleOk}

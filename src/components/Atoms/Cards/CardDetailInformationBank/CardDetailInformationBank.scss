@@ -1,0 +1,32 @@
+.CardDetailInformationBank {
+  border-radius: 4px;
+  border: 1px solid #929fb0;
+  background: #fff;
+  padding: 20px 16px;
+  .h4 {
+    margin-bottom: 24px;
+  }
+  .label {
+    color: #6e7889;
+    margin-bottom: 4px;
+  }
+  .info {
+    color: #929fb0;
+    font-style: italic;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .column {
+      width: 50%;
+    }
+  }
+  .column {
+    margin-bottom: 20px;
+    &-line {
+      border-bottom: 1px solid #dfe4eb;
+      padding-bottom: 16px;
+    }
+  }
+}

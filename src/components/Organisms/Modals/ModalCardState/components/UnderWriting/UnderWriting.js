@@ -5,6 +5,16 @@ import { Button } from "antd";
 import UploadDocs from "components/Atoms/UploadDocs/UploadDocs";
 import { Link } from "react-router-dom";
 import CardInsuranceCompanyName from "components/Atoms/Cards/CardInsuranceCompanyName/CardInsuranceCompanyName";
+import CardEstimatedDSCR from "components/Atoms/Cards/CardEstimatedDSCR/CardEstimatedDSCR";
+import InputAmount from "components/Atoms/Inputs/InputAmount/InputAmount";
+import CardMarketRent from "components/Atoms/Cards/CardMarketRent/CardMarketRent";
+import CardLeaseAgreements from "components/Atoms/Cards/CardLeaseAgreements/CardLeaseAgreements";
+import CustomInput from "components/Atoms/Inputs/CustomInput/CustomInput";
+import ButtonSubmit from "components/Atoms/Buttons/ButtonSubmit";
+import CardCreditCard from "components/Atoms/Cards/CardCreditCard/CardCreditCard";
+import CardDetailInformationBank from "components/Atoms/Cards/CardDetailInformationBank/CardDetailInformationBank";
+import CardAlertError from "components/Atoms/Cards/CardAlertError/CardAlertError";
+import CardSomeoneElse from "components/Atoms/Cards/CardSomeoneElse/CardSomeoneElse";
 
 const UnderWriting = ({
   title,
@@ -107,6 +117,26 @@ const UnderWriting = ({
                     titleButton="Upload docs to submit"
                     handleOk={handleOk}
                   />
+                </div>
+                <div className="">
+                  <CardEstimatedDSCR />
+                  <InputAmount
+                    title="How many units are in the property?"
+                    type="operation"
+                    // type="text"
+                    text="Automatically calculated"
+                  />
+                  <CardLeaseAgreements />
+                  <CardMarketRent />
+                  <CustomInput />
+                  <ButtonSubmit title="Submit for review" />
+                  <CardCreditCard />
+                  <CardDetailInformationBank />
+                  <CardAlertError
+                    title="No"
+                    text="Changing your experience could change your loan terms"
+                  />
+                  <CardSomeoneElse />
                 </div>
               </div>
             )}

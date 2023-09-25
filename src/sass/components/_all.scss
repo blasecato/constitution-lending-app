@@ -7,8 +7,17 @@
 @import "../../components/Atoms/ButtonTabsFilters/ButtonTabsFilters.scss";
 @import "../../components/Atoms/Cards/CardLoanTasks/CardLoanTasks.scss";
 @import "../../components/Atoms/Cards/CardInsuranceCompanyName/CardInsuranceCompanyName.scss";
+@import "../../components/Atoms/Cards/CardEstimatedDSCR/CardEstimatedDSCR.scss";
+@import "../../components/Atoms/Inputs/InputAmount/InputAmount.scss";
 @import "../../components/Atoms/UploadDocs/UploadDocs.scss";
 @import "../../components/Atoms/ProgressCard/ProgressCard.scss";
+@import "../../components/Atoms/Cards/CardMarketRent/CardMarketRent.scss";
+@import "../../components/Atoms/Cards/CardLeaseAgreements/CardLeaseAgreements.scss";
+@import "../../components/Atoms/Inputs/CustomInput/CustomInput.scss";
+@import "../../components/Atoms/Cards/CardCreditCard/CardCreditCard.scss";
+@import "../../components/Atoms/Cards/CardDetailInformationBank/CardDetailInformationBank.scss";
+@import "../../components/Atoms/Cards/CardAlertError/CardAlertError.scss";
+@import "../../components/Atoms/Cards/CardSomeoneElse/CardSomeoneElse.scss";
 
 // ------------------------------ Modals --------------------------------------- //
 @import "../../components/Organisms/Modals/ModalCardState/ModalCardState.scss";

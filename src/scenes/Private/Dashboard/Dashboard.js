@@ -61,6 +61,14 @@ const Dashboard = () => {
     },
     {
       id: 6,
+      title: "Purchase contract",
+      text: "My contract is/is not fully executed by all parties",
+      state: "upload",
+      stateTitle: "NOT STARTED",
+      typeTask: "quick task",
+    },
+    {
+      id: 6,
       title: "Proof of Liquidity",
       text2:
         "We’re reviewing the docs you submitted, but we need proof of a higher account balance",

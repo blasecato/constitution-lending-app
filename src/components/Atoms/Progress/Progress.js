@@ -14,6 +14,7 @@ const TabBarProgress = ({ tab }) => {
           <div className="divider" />
           {tab?.arrayItems?.map((item) => (
             <div
+              key={item.id}
               className={`felx-between ${
                 item.state === "complete" && "green-all"
               }`}>
