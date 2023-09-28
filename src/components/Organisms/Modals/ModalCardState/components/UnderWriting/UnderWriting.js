@@ -15,6 +15,7 @@ import CardCreditCard from "components/Atoms/Cards/CardCreditCard/CardCreditCard
 import CardDetailInformationBank from "components/Atoms/Cards/CardDetailInformationBank/CardDetailInformationBank";
 import CardAlertError from "components/Atoms/Cards/CardAlertError/CardAlertError";
 import CardSomeoneElse from "components/Atoms/Cards/CardSomeoneElse/CardSomeoneElse";
+import ButtonsQuestions from "../ButtonsQuestion/ButtonsQuestion";
 
 const UnderWriting = ({
   title,
@@ -43,17 +44,11 @@ const UnderWriting = ({
             </div>
             <h2 className="h3">{title}</h2>
             {type === "question" && (
-              <>
-                <p className="h2">{cuestion}</p>
-                {text && <p className="h4 h4-w4 title-text">{text}</p>}
-                <div className="options">
-                  {options?.map((option) => (
-                    <Button className="Button-option" key={option.id}>
-                      {option.title}
-                    </Button>
-                  ))}
-                </div>
-              </>
+              <ButtonsQuestions
+                cuestion={cuestion}
+                text={text}
+                options={options}
+              />
             )}
             {type === "upload" && (
               <div className="cardUpload">
@@ -136,7 +131,7 @@ const UnderWriting = ({
                     title="No"
                     text="Changing your experience could change your loan terms"
                   />
-                  <CardSomeoneElse />
+                  <CardSomeoneElse handleOk={handleOk} />
                 </div>
               </div>
             )}

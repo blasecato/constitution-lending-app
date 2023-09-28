@@ -18,6 +18,11 @@
 @import "../../components/Atoms/Cards/CardDetailInformationBank/CardDetailInformationBank.scss";
 @import "../../components/Atoms/Cards/CardAlertError/CardAlertError.scss";
 @import "../../components/Atoms/Cards/CardSomeoneElse/CardSomeoneElse.scss";
+@import "../../components/Organisms/Modals/ModalCardState/components/ButtonsQuestion/ButtonsQuestions.scss";
+@import "../../components/Organisms/Modals/ModalCardState/components/BarMinimumLiquidity/BarMinimumLiquidity.scss";
+@import "../../components/Organisms/Modals/ModalCardState/components/AddNewAccount/AddNewAccount.scss";
+@import "../../components/Organisms/Modals/ModalCardState/components/CardAddAccont/CardAddAccount.scss";
+@import "../../components/Organisms/Modals/ModalCardState/components/CardErrorPay/CardErrorPay.scss";
 
 // ------------------------------ Modals --------------------------------------- //
 @import "../../components/Organisms/Modals/ModalCardState/ModalCardState.scss";

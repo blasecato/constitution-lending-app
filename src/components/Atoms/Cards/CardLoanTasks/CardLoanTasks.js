@@ -8,6 +8,7 @@ import ProgressCard from "../../ProgressCard/ProgressCard";
 import ModalCardState from "../../../Organisms/Modals/ModalCardState/ModalCardState";
 
 const CardLoanTasks = ({ task }) => {
+  console.log("yassssss", task.state);
   return (
     <article className={`CardLoanTasks CardLoanTasks-${task.state}`}>
       <div className="CardLoanTasks__top">
@@ -102,7 +103,11 @@ const CardLoanTasks = ({ task }) => {
         {task.state === "error" && (
           <div>
             <div className="flex-betwen">
-              <Button className="button button-card">Resolve issues</Button>
+              <ModalCardState
+                title="PREAPPROVAL | MINIMUM LIQUIDITY"
+                titleButton="Resolve issues"
+                state="preapproval"
+              />
               <Button className="button button-link">View doc list</Button>
             </div>
           </div>

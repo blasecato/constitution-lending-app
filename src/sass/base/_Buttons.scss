@@ -5,6 +5,20 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  &-empty {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    span {
+      color: #404859 !important;
+      font-family: Inter;
+      font-size: 10px !important;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 0.2px;
+    }
+  }
   &-modal-ok {
     width: 100%;
     border-radius: 4px;

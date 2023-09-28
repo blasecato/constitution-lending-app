@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Modal } from "antd";
+import { Button, Modal, Checkbox } from "antd";
 import coinPng from "assets/images/coin-shadow.png";
 
 const ModalEndSubmit = ({
@@ -11,8 +11,11 @@ const ModalEndSubmit = ({
   textButtonCancel,
   text2,
   title2,
+  icon,
+  className,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isCheckBox] = useState(false);
   const showModal = () => {
     handleOk();
     setIsModalOpen(true);
@@ -23,6 +26,9 @@ const ModalEndSubmit = ({
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+  const onChange = (e) => {
+    console.log(`checked = ${e.target.checked}`);
+  };
   return (
     <section className="ModalEndSubmit">
       <Button
@@ -31,16 +37,20 @@ const ModalEndSubmit = ({
         {titleButton}
       </Button>
       <Modal
-        className="modal-end-submit"
         open={isModalOpen}
         onOk={handleModalOk}
         maskStyle={{
           background: "rgba(0, 0, 0, 0.60)",
           backdropFilter: "blur(2px)",
         }}
-        onCancel={handleCancel}>
+        onCancel={handleCancel}
+        className={`modal-end-submit ${className}`}>
         <div className="modal-end-submit__content">
-          <img className="coin" alt="coin" src={coinPng} />
+          {icon ? (
+            <img className="coin" alt="coin" src={icon} />
+          ) : (
+            <img className="coin" alt="coin" src={coinPng} />
+          )}
           <h2 className="h2">{title}</h2>
           <h4 className="h4 h4-w4">{text}</h4>
           {title2 && (
@@ -57,6 +67,11 @@ const ModalEndSubmit = ({
               {textButtonCancel}
             </Button>
           </div>
+          {isCheckBox && (
+            <Checkbox onChange={onChange}>
+              Don’t show this message again for this task
+            </Checkbox>
+          )}
         </div>
       </Modal>
     </section>

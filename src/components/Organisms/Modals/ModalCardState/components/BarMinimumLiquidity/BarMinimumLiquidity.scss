@@ -1,0 +1,16 @@
+.BarMinimumLiquidity {
+  .bar {
+    width: 100%;
+    background-color: #dfe4eb;
+    height: 8px;
+    border-radius: 8px;
+    &-percentage {
+      height: 8px;
+      border-radius: 8px;
+      background-color: #c94f4a;
+    }
+  }
+  .h4 {
+    color: #404859 !important;
+  }
+}

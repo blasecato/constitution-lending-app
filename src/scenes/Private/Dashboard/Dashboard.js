@@ -86,6 +86,15 @@ const Dashboard = () => {
       typeTask: "Major task",
       progress: 30,
     },
+    {
+      id: 8,
+      title: "Proof of Liquidity",
+      text2: "We were unable to approve 2 of your docs",
+      state: "error",
+      stateTitle: "ERROR",
+      typeTask: "Major task",
+      progress: 20,
+    },
   ];
   const dummyTabsOfProgress = [
     {

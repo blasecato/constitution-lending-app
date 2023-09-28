@@ -1,0 +1,25 @@
+.CardAddAccont {
+  border-radius: 4px;
+  border: 1px solid #2a2f3c;
+  padding: 8px;
+  .flex-btw {
+    align-items: flex-start !important;
+    border-bottom: 1px solid #afbdcc;
+  }
+  .box {
+    width: 50%;
+    .h4 {
+      color: #929fb0;
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+    &:first-child {
+      margin-top: 10px;
+    }
+    .ModalEndSubmit {
+      .button {
+        display: none;
+      }
+    }
+  }
+}

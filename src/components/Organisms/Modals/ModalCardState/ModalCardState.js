@@ -5,6 +5,7 @@ import UnderWriting from "./components/UnderWriting/UnderWriting";
 import AddDocs from "./components/AddDocs/AddDocs";
 import HomePng from "assets/images/home-yellow-png.png";
 import cortPng from "assets/images/cort.png";
+import Preapproval from "./components/Preapproval/Preapproval";
 
 const ModalCardState = ({ title, titleButton, state }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -17,6 +18,7 @@ const ModalCardState = ({ title, titleButton, state }) => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+  console.log("state", state);
   return (
     <section className="ModalCardState">
       <Button
@@ -70,10 +72,41 @@ const ModalCardState = ({ title, titleButton, state }) => {
                 { id: 1, title: "Yes, give me a quote" },
                 { id: 1, title: "No, I already have an insurance agent" },
               ]}
-              // type="question"
-              type="cardCompany"
+              type="question"
+              // type="cardCompany"
               // type="upload"
               // type="uploadHUDs"
+            />
+          </div>
+        )}
+        {state === "preapproval" && (
+          <div>
+            <Preapproval
+              title="We need to confirm you have funds to cover closing costs, interest, and a down payment"
+              subTitle="You’ll need to show account balances totaling $XXX from any of:"
+              listItems={[
+                {
+                  id: 1,
+                  text: "Bank accounts: You can use business or personal",
+                },
+                {
+                  id: 2,
+                  text: "Retirement/Pension accounts: Only 50% of your balance will apply toward minimum liquidity",
+                },
+                { id: 3, text: "Cash-equivalent brokerage accounts" },
+                {
+                  id: 4,
+                  text: "Other brokerage accounts: Only 50% of your balance will apply toward minimum liquidity",
+                },
+              ]}
+              handleOk={handleOk}
+              icon={cortPng}
+              options={[
+                { id: 1, title: "I’m ready to go!" },
+                { id: 1, title: "I’ll do this later" },
+              ]}
+              // type="question"
+              type="cardCompany"
             />
           </div>
         )}

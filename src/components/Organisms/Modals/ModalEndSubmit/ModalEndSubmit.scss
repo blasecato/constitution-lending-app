@@ -8,6 +8,10 @@
   padding: 0;
   width: 556px !important;
   top: 202px !important;
+  .coin {
+    width: 49.334px;
+    height: 34px;
+  }
   .ant-modal-content {
     background-color: transparent;
     padding: 32px;
@@ -35,5 +39,41 @@
   }
   .anticon {
     color: #997120;
+  }
+  .ant-checkbox-wrapper {
+    margin-top: 10px;
+    span {
+      color: #244560;
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.18px;
+    }
+  }
+  &--white {
+    background: #fff;
+    border-color: #fff;
+    .ant-modal-content {
+      .h2 {
+        color: #162e43;
+      }
+      .h4 {
+        color: #48759a;
+      }
+      .buttons {
+        .button-modal-ok {
+          border: 1px solid #162e43 !important;
+          background: #162e43 !important;
+          color: #ffffff !important;
+        }
+        .button-modal-cancel {
+          border: 1px solid #162e43 !important;
+          background: #fff !important;
+          color: #162e43 !important;
+        }
+      }
+    }
   }
 }

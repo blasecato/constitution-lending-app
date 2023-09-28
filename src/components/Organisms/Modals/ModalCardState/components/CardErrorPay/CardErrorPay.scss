@@ -1,0 +1,27 @@
+.CardErrorPay {
+  border-radius: 6px;
+  border: 1px solid #c94f4a;
+  padding: 12px 15px;
+  .flex-btw {
+    margin-bottom: 5px;
+  }
+  .body-regular {
+    color: #c94f4a;
+  }
+  .body-regular-w6 {
+    color: #712220;
+  }
+  .button {
+    color: #712220;
+    text-align: right;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    .anticon {
+      color: #712220;
+      margin-top: 2px;
+    }
+  }
+}
